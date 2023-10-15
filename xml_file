@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temprature Converter"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/getVal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="enter temprature"
+        android:inputType="number"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:id="@+id/showAns"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/C2F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius to Fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/F2C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit to Celsius" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/ansBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show answer"
+            android:layout_marginHorizontal="8dp"/>
+
+        <Button
+            android:id="@+id/againBtn"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="Again" />
+    </LinearLayout>
+    </LinearLayout>
